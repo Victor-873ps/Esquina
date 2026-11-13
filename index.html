@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faça o seu Pedido</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo da Loja">
+      <h1>Esquina<span>DoSabor</span></h1>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h1>Monte o seu pedido</h1>
+      <p class="subtitulo">Escolha os itens desejados e ajuste as quantidades abaixo.</p>
+
+      <div class="item">
+        <h2>Hambúrguer</h2>
+        <p class="preco">R$ 28,00</p>
+        <div class="controles">
+          <button type="button" aria-label="Diminuir quantidade">-</button>
+          <span class="quantidade">0</span>
+          <button type="button" aria-label="Aumentar quantidade">+</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2>Batata Frita</h2>
+        <p class="preco">R$ 14,00</p>
+        <div class="controles">
+          <button type="button" aria-label="Diminuir quantidade">-</button>
+          <span class="quantidade">0</span>
+          <button type="button" aria-label="Aumentar quantidade">+</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <h2>Refrigerant Lata 350ml</h2>
+        <p class="preco">R$ 6,00</p>
+        <div class="controles">
+          <button type="button" aria-label="Diminuir quantidade">-</button>
+          <span class="quantidade">0</span>
+          <button type="button" aria-label="Aumentar quantidade">+</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="pedido">
+      <h2>Resumo do Pedido</h2>
+      <ul id="lista-pedido">
+        <li>Nenhum item selecionado ainda.</li>
+      </ul>
+      
+      <div class="total">
+        <span>Total:</span>
+        <span>R$ 0,00</span>
+      </div>
+
+      <button type="button" class="botao" id="enviar">Enviar Pedido via WhatsApp</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+</body>
+</html>
