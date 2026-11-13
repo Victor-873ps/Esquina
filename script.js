@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     itens.forEach(item => {
       const nome = item.querySelector("h2").textContent;
       const precoTexto = item.querySelector(".preco").textContent;
-      // Extrai o valor numérico do preço (ex: "R$ 28,00" -> 28.00)
+      // Extrai o valor numérico do preço
       const preco = parseFloat(precoTexto.replace("R$", "").replace(".", "").replace(",", ".").trim());
       const quantidade = parseInt(item.querySelector(".quantidade").textContent);
 
